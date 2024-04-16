@@ -1,0 +1,147 @@
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #000000;
+    font-size: 17px;
+    font-weight: 300;
+ }
+
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container { 
+   margin:  0 112px;
+
+}
+
+
+
+
+/* HEADER */
+
+header {
+   margin: 30px 60px 50px 40px ;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+   font-family: 'Proxima Nova', sans-serif;
+  color: #19a914;
+   margin-right: 50px;
+   text-decoration: none;
+
+   transition: color .3s ease;
+}
+
+nav a:hover {
+   color: #ff0000;
+}
+
+nav a:last-of-type {
+   margin-right: 0;
+}
+
+.button-header {
+   font-family: 'Proxima Nova', sans-serif;
+   background-color: #19a914;
+   padding: 9px 15px;
+   border-radius: 3px;
+   text-emphasis: none;
+   color: #000000;
+
+   transition: all .2s ease
+}
+
+.button-header:hover {
+   background-color: #ff0000;
+   color: #000000;
+}
+
+/*  */
+
+
+
+
+/* SEANS */
+
+.seans {
+   padding-bottom: 150px;
+}
+
+.seans-tite {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   margin-bottom: 100px;
+}
+
+.seans-tite p {
+  font-size: 42px; 
+  font-weight: 800;
+  color: #19a914;
+
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.seans-inner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+body {
+    background-color: black;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#login-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: color .3s ease;
+}
+
+
+
+
+
+
+
+
+
+

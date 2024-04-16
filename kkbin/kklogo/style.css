@@ -1,0 +1,317 @@
+ body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #000000;
+    font-size: 17px;
+    font-weight: 300;
+ }
+
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container { 
+   margin:  0 112px;
+
+}
+
+
+
+
+/* HEADER */
+
+header {
+   margin: 30px 60px 50px 40px ;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+   font-family: 'Proxima Nova', sans-serif;
+  color: #19a914;
+   margin-right: 50px;
+   text-decoration: none;
+
+   transition: color .3s ease;
+}
+
+nav a:hover {
+   color: #ff0000;
+}
+
+nav a:last-of-type {
+   margin-right: 0;
+}
+
+.button-header {
+   font-family: 'Proxima Nova', sans-serif;
+   background-color: #19a914;
+   padding: 9px 15px;
+   border-radius: 3px;
+   text-emphasis: none;
+   color: #000000;
+
+   transition: all .2s ease
+}
+
+.button-header:hover {
+   background-color: #ff0000;
+   color: #000000;
+}
+
+/*  */
+
+
+
+
+/* SEANS */
+
+.seans {
+   padding-bottom: 150px;
+}
+
+.seans-tite {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   margin-bottom: 100px;
+}
+
+.seans-tite p {
+  font-size: 42px; 
+  font-weight: 800;
+  color: #19a914;
+
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.seans-inner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.seans-item {
+   background-image: url(../kklogo/gif.gif);
+   width: 416px;
+   height: 258px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+   margin: 12px;
+
+   border-bottom: #19a914 7px solid;
+
+   position: relative;
+}
+
+.seans-item p {
+   color: #19a914;
+   font-size: 24px;
+   font-weight: 800;
+
+   position: absolute;
+   left: 40px;
+   bottom: 5px;
+   
+}
+
+.seans-item .left p {
+   left: 50px;
+   bottom: 50px;
+}
+.left {
+   height: 540px;
+   border-bottom: #19a914 7px solid;
+   
+}
+
+.seans-right {
+   display: flex;
+}
+
+.seans-right div {
+   display: flex;
+   flex-direction: column;
+
+}
+/* Comments */
+
+.comments {
+   padding-bottom: 150px;
+}
+
+.comments-inner {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.comments-item {
+   background-color: #137320;
+   color: #fff;
+   padding: 60px;
+   border-radius: 10px;
+   font-family: 'Proxima Nova', sans-serif;
+}
+
+.comments-item h3 {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.comments-item p {
+   font-size: 14px;
+   font-weight: 100;
+   line-height: 140%;
+}
+
+.comments-item:nth-child(1),
+.comments-item:nth-child(3) {
+   transform: scale(0.8);
+}
+
+.comments-item:nth-child(1),
+.comments-item:nth-child(3) {
+   opacity: 0.4;
+}
+
+.comments-inner-bar {
+   display: flex;
+   justify-content: center;
+   margin-top: 60px;
+}
+
+.comments-inner-bar img {
+   margin-right: 20px;
+}
+
+.comments-inner-bar img:nth-of-type(2),
+.comments-inner-bar img:nth-of-type(3),
+.comments-inner-bar img:nth-of-type(4) {
+   opacity: 0.4;
+}
+
+
+
+/* About */
+
+
+.about-inner {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.about-item {
+   width: 40%;
+   color: #fff;
+   margin: 42px;
+
+   font-family: 'Proxima Nova', sans-serif;
+}
+
+.about-item h2 {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 30px;
+   line-height: 140%;
+}
+
+.about-item p {
+   font-size: 16px;
+   font-weight: 100;
+   line-height: 140%;
+}
+
+
+
+
+/* PRICE */
+
+.price {
+   padding-bottom: 150px;
+}
+
+.price .seans-tite {
+   margin-top: 100px;
+}
+
+.price-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.price-content-items {
+   margin-right: 134px;
+}
+
+.price-content-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin-bottom: 31px;
+}
+
+.price-content-item div {
+   display: flex;
+   align-items: center;
+}
+
+.price-content-item div img {
+   width: 18px;
+   height: 9px;
+   margin-right: 20px;
+}
+
+.price-content-item div h3 {
+   font-family: 'Proxima Nova', sans-serif;
+   font-size: 18px;
+   color: #fff;
+   font-weight: 300;
+}
+
+.price-content-item p {
+   margin-left: 40px;
+   font-weight: bold;
+   font-size: 18px;
+   color: #fff;
+
+   border-bottom: #19a914 7px solid;
+
+   position: relative;
+}
+
+.price-content-image p {
+   font-size: 21px;
+   text-align: center;
+   color: #fff;
+   font-weight: bold;
+   margin-top: 30px;
+
+   border-bottom: #19a914 7px solid;
+
+   position: relative;
+}
+
+
+
+
+
+
+
+
+
+

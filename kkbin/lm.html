@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="kklogo/style.css">
+    <link rel="stylesheet" href="kklogo/fonts.css">
+    <link rel="stylesheet" href="kklogo/fonts.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сайт</title>
+</head>
+<body>
+    
+
+    <header>
+
+         <div class="contai">  
+
+          <div class="header-inner"> 
+
+              <img src="kklogo/logo.png" alt="">
+
+                 <nav>
+
+                     <a href="index.html">Главная</a>
+                     <a href="rinok.html">Рынки</a>
+                     <a href="lm.html">Лучшие монеты</a>
+                     
+
+                </nav>
+
+                <a class="button-header" href="new.html" href="">Кабинет</a>
+        
+
+          </div>
+
+        </div>
+
+
+
+    </header>
+
+
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Prices</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: Arial, sans-serif;
+            padding: 0px;
+        }
+
+        .crypto-container {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="crypto-container" id="bnb">BNB: $<span id="bnb-price"></span></div>
+    <div class="crypto-container" id="dot">DOT: $<span id="dot-price"></span></div>
+    <div class="crypto-container" id="btc">BTC: $<span id="btc-price"></span></div>
+    <div class="crypto-container" id="eth">ETH: $<span id="eth-price"></span></div>
+    <div class="crypto-container" id="sol">SOL: $<span id="sol-price"></span></div>
+    <div class="crypto-container" id="doge">DOGE: $<span id="doge-price"></span></div>
+    <div class="crypto-container" id="avax">AVAX: $<span id="avax-price"></span></div>
+    <div class="crypto-container" id="shib">SHIB: $<span id="shib-price"></span></div>
+    <div class="crypto-container" id="bome">BOME: $<span id="bome-price"></span></div>
+    <div class="crypto-container" id="arb">ARB: $<span id="arb-price"></span></div>
+    <div class="crypto-container" id="tia">TIA: $<span id="tia-price"></span></div>
+    <div class="crypto-container" id="ada">ADA: $<span id="ada-price"></span></div>
+    <div class="crypto-container" id="link">LINK: $<span id="link-price"></span></div>
+    <div class="crypto-container" id="apt">APT: $<span id="apt-price"></span></div>
+    <div class="crypto-container" id="ong">ONG: $<span id="ong-price"></span></div>
+    <div class="crypto-container" id="vet">VET: $<span id="vet-price"></span></div>
+    <div class="crypto-container" id="stx">STX: $<span id="stx-price"></span></div>
+    <div class="crypto-container" id="ar">AR: $<span id="ar-price"></span></div>
+    <div class="crypto-container" id="grt">GRT: $<span id="grt-price"></span></div>
+    <div class="crypto-container" id="polyx">POLYX: $<span id="polyx-price"></span></div>
+    <div class="crypto-container" id="jto">JTO: $<span id="jto-price"></span></div>
+    <div class="crypto-container" id="meme">MEME: $<span id="meme-price"></span></div>
+    <div class="crypto-container" id="ena">ENA: $<span id="ena-price"></span></div>
+   
+
+    <script>
+        function fetchPrices() {
+            fetch('https://api.binance.com/api/v3/ticker/price')
+            .then(response => response.json())
+            .then(data => {
+                const cryptocurrencies = [
+                    'BNB', 'DOT', 'BTC', 'ETH', 'SOL', 'DOGE', 'AVAX', 'TON',
+                    'SHIB', 'BOME', 'ARB', 'TIA', 'ADA', 'LINK', 'APT', 'ONG', 
+                    'VET', 'STX', 'AR', 'GRT', 'POLYX', 'JTO', 'MEME', 'ENA', 'FDUSH'
+                ];
+
+                cryptocurrencies.forEach(symbol => {
+                    const element = document.getElementById(symbol.toLowerCase() + '-price');
+                    const priceData = data.find(item => item.symbol === symbol + 'USDT');
+                    if (element && priceData) {
+                        element.textContent = priceData.price;
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data from Binance API:', error));
+        }
+
+        // Fetch prices initially
+        fetchPrices();
+
+        // Fetch prices every 10 seconds
+        setInterval(fetchPrices, 10000);
+    </script>
+</body>
+</html>
